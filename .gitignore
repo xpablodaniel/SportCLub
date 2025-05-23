@@ -1,0 +1,8 @@
+# Ignorar archivos de configuración y scripts de prueba con credenciales
+config.php
+test_config.php
+test.php
+
+# Opcional: Ignorar cualquier otro archivo de configuración o prueba similar
+*config.php
+test*.php
