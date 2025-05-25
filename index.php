@@ -8,6 +8,13 @@
 </head>
 <body>
   <h2>📝 Registrar Rutina de Entrenamiento</h2>
+
+  <?php if (isset($_GET['success'])): ?>
+    <div class="alert alert-success">
+      ✅ ¡Ejercicio registrado correctamente!
+    </div>
+  <?php endif; ?>
+
   <form action="procesar.php" method="POST">
     <label>Fecha:</label>
     <input type="date" name="fecha" value="<?= date('Y-m-d') ?>" required><br>

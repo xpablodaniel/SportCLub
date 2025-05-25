@@ -48,7 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $insert_stmt = $conn->prepare($insert_sql);
   $insert_stmt->bind_param("isssiii", $id_ejercicio, $grupo_muscular, $nombre_ejercicio, $fecha, $series, $repeticiones, $peso);
   if ($insert_stmt->execute()) {
-    echo "✅ ¡Ejercicio registrado correctamente! <a href='index.php'>Volver</a>";
+    header("Location: index.php?success=1");
+    exit;
   } else {
     echo "❌ Error al registrar: " . $conn->error;
   }

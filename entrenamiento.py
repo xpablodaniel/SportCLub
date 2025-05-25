@@ -74,14 +74,24 @@ all_exercises = {
 # --- Parte 2: Datos de la Rutina Semanal ---
 
 # Fecha de la rutina (puedes mantenerla manual o generarla dinámicamente)
-fecha_rutina = '2025-05-21' # Hoy es 21 de Mayo de 2025
+fecha_rutina = '2025-05-22' # Hoy es 21 de Mayo de 2025
 
 # Definición de la rutina por ID de ejercicio, series, repeticiones y peso.
 # Los campos grupo_muscular y nombre_ejercicio se buscarán automáticamente.
 # Formato: (id_ejercicio, series, repeticiones, peso)
 
 rutina_semanal_ids = [
-    (46, 3, 12, 7.5), # Cuádriceps - Sentadillas frontales
+     
+    (32, 4, 8, 10),
+    (33, 4, 10, 17),
+    (34, 3, 10, 23),
+    (35, 4, 10, 22.5),
+    (36, 3, 10, 47),
+    (37, 4, 8, 59),
+    (39, 3, 10, 10),
+    (40, 4, 10, 20),
+    (41, 3, 10, 53),
+    (42, 4, 10, 41)
     
 ]
 # --- Parte 3: Lógica de Conexión y Inserción con Validación ---
